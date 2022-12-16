@@ -10,7 +10,7 @@ COPY ./app/package-lock.json package-lock.json
 RUN JOBS=MAX npm install -g --production --unsafe-perm \
       node-red \
       node-red-contrib-balena \
-    && JOBS=MAX npm install --unsafe-perm --production && npm cache clean --force
+    && JOBS=MAX npm install --unsafe-perm --production && npm cache clean --force && npm i node-red-node-serialport
 
 ###
 # Runtime image
