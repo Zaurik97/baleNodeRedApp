@@ -221,11 +221,5 @@ module.exports = {
             audit: false
         }
     }
-    
-    contextStorage: {
-        default: {
-        module: “localfilesystem”
-        }
-    }
 
 };
